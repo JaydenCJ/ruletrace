@@ -2,7 +2,7 @@
   "name": "ruletrace",
   "version": "0.1.0",
   "description": "Read-only resolver and debugger for AI coding-agent rule files — prints the exact instruction stack any path gets: nested CLAUDE.md, @-imports, Cursor globs, Copilot applyTo.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
