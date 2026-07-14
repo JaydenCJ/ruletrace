@@ -1,0 +1,54 @@
+{
+  "name": "ruletrace",
+  "version": "0.1.0",
+  "description": "Read-only resolver and debugger for AI coding-agent rule files — prints the exact instruction stack any path gets: nested CLAUDE.md, @-imports, Cursor globs, Copilot applyTo.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ruletrace": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "claude-md",
+    "agents-md",
+    "cursor-rules",
+    "copilot-instructions",
+    "rule-resolution",
+    "ai-coding-agents",
+    "debugger",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/ruletrace.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/ruletrace#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/ruletrace/issues"
+  }
+}
